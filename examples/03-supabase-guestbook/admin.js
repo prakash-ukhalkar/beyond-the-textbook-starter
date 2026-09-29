@@ -6,8 +6,8 @@
 // ==========================================================
 
 // STEP 1: Same project details as app.js. Paste your own here too.
-const SUPABASE_URL = "https://YOUR-PROJECT-ID.supabase.co";
-const SUPABASE_KEY = "YOUR_PUBLISHABLE_KEY";
+const SUPABASE_URL = "https://kpgdedwlegwvvcmzwlur.supabase.co";
+const SUPABASE_KEY = "sb_publishable_jPZB2HSQEmVcuMTRhExVyw_ajSINF2t";
 
 const db = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 

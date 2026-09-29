@@ -7,8 +7,8 @@
 // The PUBLISHABLE key (starts with sb_publishable_) is safe in a web page
 // because Row Level Security protects the table.
 // NEVER paste the SECRET key (sb_secret_...) or the service_role key here.
-const SUPABASE_URL = "https://YOUR-PROJECT-ID.supabase.co";
-const SUPABASE_KEY = "YOUR_PUBLISHABLE_KEY";
+const SUPABASE_URL = "https://kpgdedwlegwvvcmzwlur.supabase.co";
+const SUPABASE_KEY = "sb_publishable_jPZB2HSQEmVcuMTRhExVyw_ajSINF2t";
 
 // STEP 2: Connect to Supabase
 const db = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);

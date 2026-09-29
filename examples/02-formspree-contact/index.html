@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Me | Formspree Example</title>
   <meta name="description" content="A simple contact form that sends messages to your email using Formspree.">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✉️</text></svg>">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✉️</text></svg>">
 </head>
+
 <body>
 
   <main class="container">
     <a class="back-link" href="../../index.html">&larr; Beyond the Textbook</a>
     <p class="kicker">Formspree example</p>
     <h1>Contact Me</h1>
-    <p class="intro">Fill in the form and your message will arrive in my email inbox. No server, no PHP, no database.</p>
+    <p class="intro">Fill in the form and your message will arrive in my email inbox. No server, no PHP, no database.
+    </p>
 
     <!--
       HOW THIS WORKS
@@ -23,7 +27,7 @@
       - method  = POST sends the data securely in the request body.
       - name="" = every field needs a name. That name becomes the label in your email.
     -->
-    <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <form id="contact-form" action="https://formspree.io/f/xjyklyqk" method="POST">
 
       <label for="name">Your name</label>
       <input type="text" id="name" name="name" placeholder="e.g. Rohan Kulkarni" required>
@@ -51,11 +55,13 @@
       <p id="form-status" role="status"></p>
     </form>
 
-    <p class="note">Powered by <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a> &middot; Free plan: 50 submissions per month</p>
+    <p class="note">Powered by <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a> &middot; Free
+      plan: 50 submissions per month</p>
   </main>
 
   <!-- Optional: script.js shows "Thank you" on the same page.
        The form still works without it (Formspree shows its own thank-you page). -->
   <script src="script.js"></script>
 </body>
+
 </html>
