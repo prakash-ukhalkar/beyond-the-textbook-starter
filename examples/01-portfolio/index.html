@@ -95,7 +95,7 @@
       <p>Have a question or an idea? Send me a message.</p>
 
       <!-- Replace YOUR_FORM_ID with your own ID from formspree.io (see Guide 02) -->
-      <form class="contact-form" action="https://formspree.io/f/xjyklyqk" method="POST">
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/xjyklyqk" method="POST">
         <label for="name">Your name</label>
         <input type="text" id="name" name="name" required>
 
@@ -105,7 +105,10 @@
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="4" required></textarea>
 
-        <button type="submit" class="btn">Send message</button>
+        <button type="submit" id="send-btn" class="btn">Send message</button>
+
+        <!-- Success or error message appears here -->
+        <p id="form-status" role="status"></p>
       </form>
     </section>
 
@@ -117,6 +120,9 @@
     <p class="workshop-note"><a href="../../index.html">&larr; Beyond the Textbook</a> starter example</p>
   </footer>
 
+  <!-- Shows "Thank you" on this page instead of redirecting to Formspree's page.
+       The form still works without it (Formspree shows its own thank-you page). -->
+  <script src="script.js"></script>
 </body>
 
 </html>

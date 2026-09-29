@@ -151,6 +151,11 @@ nav a:hover { color: #FFFFFF; }
   font-family: inherit;
 }
 .contact-form button { margin-top: 10px; align-self: flex-start; }
+.contact-form button:disabled { background: var(--grey); cursor: wait; }
+
+#form-status { min-height: 1.5em; font-weight: bold; }
+#form-status.success { color: #1E8E5A; }
+#form-status.error { color: #C0392B; }
 
 /* 10. Footer */
 .site-footer {

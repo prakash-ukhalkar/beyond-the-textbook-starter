@@ -17,10 +17,33 @@ body {
   line-height: 1.6;
 }
 
-.container { max-width: 640px; margin: 0 auto; padding: 40px 20px; }
+/* Header and navigation (matches examples/01-portfolio) */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  background: var(--navy);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.logo { color: #FFFFFF; font-weight: bold; font-size: 1.15rem; text-decoration: none; }
+.logo span { color: var(--cyan); }
 
-.back-link { display: inline-block; margin-bottom: 16px; color: var(--blue); font-size: 0.85rem; text-decoration: none; }
-.back-link:hover { text-decoration: underline; }
+.btn-back {
+  color: #CFE6F5;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 8px;
+  padding: 6px 12px;
+}
+.btn-back:hover { color: #FFFFFF; border-color: #FFFFFF; }
+
+.container { max-width: 640px; margin: 0 auto; padding: 40px 20px; }
 
 .kicker { color: var(--cyan); font-weight: bold; letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem; }
 h1 { font-size: 2rem; margin: 4px 0 8px; }
