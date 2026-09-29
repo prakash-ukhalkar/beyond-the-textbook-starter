@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond the Textbook | Starter Examples</title>
+  <meta name="description" content="Starter examples from the Beyond the Textbook web development workshop: portfolio, Formspree contact form and Supabase guestbook.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📘</text></svg>">
+  <style>
+    :root { --navy:#0B2E59; --blue:#0B5FBF; --cyan:#00B4D8; --grey:#5B6B7C; --light:#F5F9FD; --border:#D7E4F0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, Helvetica, sans-serif; color: var(--navy); background: var(--light); line-height: 1.6; }
+    header { background: var(--navy); color: #fff; padding: 48px 20px; text-align: center; }
+    header p.k { color: var(--cyan); font-weight: bold; letter-spacing: 2px; font-size: .8rem; }
+    header h1 { font-size: 2.2rem; margin: 6px 0; }
+    header p { color: #CFE6F5; }
+    main { max-width: 960px; margin: 0 auto; padding: 32px 20px; display: grid; gap: 18px; grid-template-columns: 1fr; }
+    a.card { display: block; background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 22px; text-decoration: none; color: inherit; }
+    a.card:hover { border-color: var(--cyan); }
+    .num { color: var(--cyan); font-weight: bold; }
+    .card h2 { font-size: 1.2rem; margin: 4px 0; }
+    .card p { color: var(--grey); font-size: .95rem; }
+    footer { text-align: center; color: var(--grey); font-size: .85rem; padding: 24px; }
+    @media (min-width: 768px) { main { grid-template-columns: repeat(3, 1fr); } }
+
+    .instructor-bar { background: #071F3D; color: #CFE6F5; font-size: .82rem; padding: 8px 20px; text-align: center; }
+    .instructor-bar a { color: #fff; text-decoration: none; font-weight: bold; }
+    .instructor-bar a:hover { text-decoration: underline; }
+
+    .site-footer { background: var(--navy); color: #CFE6F5; padding: 32px 20px 24px; text-align: center; }
+    .site-footer .credit { font-weight: bold; color: #fff; margin-bottom: 4px; }
+    .site-footer .role { font-size: .85rem; color: #9FC3E0; margin-bottom: 14px; }
+    .site-footer .links { display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; margin-bottom: 14px; }
+    .site-footer .links a { color: var(--cyan); text-decoration: none; font-size: .9rem; }
+    .site-footer .links a:hover { text-decoration: underline; }
+    .site-footer .copyright { font-size: .78rem; color: #6E8AA6; }
+  </style>
+</head>
+<body>
+  <div class="instructor-bar">
+    Workshop led by <a href="https://github.com/prakash-ukhalkar" target="_blank" rel="noopener">Prakash Ukhalkar</a> &middot; Educator, ML &amp; AI, PCCOE
+  </div>
+  <header>
+    <p class="k">BEYOND THE TEXTBOOK</p>
+    <h1>Starter Examples</h1>
+    <p>Open an example, read its guide, then make it your own.</p>
+  </header>
+  <main>
+    <a class="card" href="examples/01-portfolio/">
+      <span class="num">01</span>
+      <h2>Portfolio Page</h2>
+      <p>A mobile-friendly personal website in HTML and CSS.</p>
+    </a>
+    <a class="card" href="examples/02-formspree-contact/">
+      <span class="num">02</span>
+      <h2>Contact Form</h2>
+      <p>Messages go straight to your email with Formspree.</p>
+    </a>
+    <a class="card" href="examples/03-supabase-guestbook/">
+      <span class="num">03</span>
+      <h2>Class Guestbook</h2>
+      <p>Save and show messages with a Supabase database.</p>
+    </a>
+  </main>
+  <footer class="site-footer">
+    <p class="credit">Prakash Ukhalkar</p>
+    <p class="role">Educator &middot; Mentor &middot; Machine Learning, AI &amp; Innovation &middot; Pimpri Chinchwad College of Engineering, Pune</p>
+    <div class="links">
+      <a href="https://github.com/prakash-ukhalkar" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://prakash-ukhalkar.github.io" target="_blank" rel="noopener">Website</a>
+      <a href="https://www.linkedin.com/in/prakash-ukhalkar" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p class="copyright">&copy; 2026 &middot; Beyond the Textbook Workshop &middot; Hosted free on GitHub Pages</p>
+  </footer>
+</body>
+</html>
