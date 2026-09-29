@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Guestbook | Supabase Example</title>
+  <meta name="description" content="A class guestbook that saves messages in a Supabase database and shows them to every visitor.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
+</head>
+<body>
+
+  <main class="container">
+    <a class="back-link" href="../../index.html">&larr; Beyond the Textbook</a>
+    <p class="kicker">Supabase example</p>
+    <h1>Class Guestbook</h1>
+    <p class="intro">Leave a message for the class. It is saved in a Supabase database and everyone can see it.</p>
+
+    <!-- 1. Form to ADD a message -->
+    <form id="guestbook-form" class="panel">
+      <label for="name">Your name</label>
+      <input type="text" id="name" maxlength="50" placeholder="e.g. Meera" required>
+
+      <label for="message">Your message</label>
+      <textarea id="message" rows="3" maxlength="300" placeholder="Say something nice..." required></textarea>
+
+      <button type="submit" id="post-btn">Post message</button>
+      <p id="status" role="status"></p>
+    </form>
+
+    <!-- 2. List where saved messages are SHOWN -->
+    <section>
+      <h2>Messages <span id="count"></span></h2>
+      <ul id="message-list">
+        <li class="empty">Loading messages...</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- 3. Load the Supabase library from a CDN (no installation needed) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- 4. Our own code -->
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 1. Basic page settings -->
+  <meta charset="UTF-8">
+  <!-- This line makes the page fit phone screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 2. SEO: what Google shows in search results -->
+  <title>Asha Patil | Student Web Developer</title>
+  <meta name="description" content="Portfolio of Asha Patil, a 12th standard student learning web development. See my projects and get in touch.">
+
+  <!-- 3. Link to the CSS file that styles this page -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👤</text></svg>">
+</head>
+<body>
+
+  <!-- ============ HEADER + NAVIGATION ============ -->
+  <header class="site-header">
+    <a href="#top" class="logo">Asha<span>.dev</span></a>
+    <nav aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO (first thing visitors see) ============ -->
+    <section class="hero">
+      <p class="kicker">Hello, I'm</p>
+      <h1>Asha Patil</h1>
+      <p class="tagline">12th standard student from Pune. I build simple, useful websites with HTML, CSS and JavaScript.</p>
+      <a href="#projects" class="btn">See my projects</a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <h2>About me</h2>
+      <p>I started learning web development in school with HTML and CSS. Now I build small projects every week and publish them online with GitHub Pages.</p>
+      <ul class="skills">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Git &amp; GitHub</li>
+        <li>Formspree</li>
+        <li>Supabase</li>
+      </ul>
+    </section>
+
+    <!-- ============ PROJECTS (3 cards in a grid) ============ -->
+    <section id="projects" class="section">
+      <h2>My projects</h2>
+      <div class="projects">
+
+        <article class="card">
+          <!-- alt text describes the image for screen readers and Google -->
+          <img src="https://placehold.co/600x360/0B2E59/FFFFFF?text=Quiz+App" alt="Screenshot of a general knowledge quiz app">
+          <h3>Quiz App</h3>
+          <p>A 10-question general knowledge quiz that shows your score at the end.</p>
+          <a href="#" class="link">View project &rarr;</a>
+        </article>
+
+        <article class="card">
+          <img src="https://placehold.co/600x360/0B5FBF/FFFFFF?text=Contact+Form" alt="Screenshot of a contact form connected to Formspree">
+          <h3>Contact Form</h3>
+          <p>A contact form that sends messages to my email using Formspree.</p>
+          <a href="#" class="link">View project &rarr;</a>
+        </article>
+
+        <article class="card">
+          <img src="https://placehold.co/600x360/00B4D8/FFFFFF?text=Guestbook" alt="Screenshot of a class guestbook built with Supabase">
+          <h3>Class Guestbook</h3>
+          <p>Visitors leave a message and everyone can read it. Data is saved in Supabase.</p>
+          <a href="#" class="link">View project &rarr;</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ CONTACT (form powered by Formspree) ============ -->
+    <section id="contact" class="section">
+      <h2>Contact me</h2>
+      <p>Have a question or an idea? Send me a message.</p>
+
+      <!-- Replace YOUR_FORM_ID with your own ID from formspree.io (see Guide 02) -->
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Send message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Asha Patil &middot; Built with HTML &amp; CSS &middot; Hosted on GitHub Pages</p>
+    <p class="workshop-note"><a href="../../index.html">&larr; Beyond the Textbook</a> starter example</p>
+  </footer>
+
+</body>
+</html>

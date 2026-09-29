@@ -1,0 +1,178 @@
+/* =========================================================
+   Portfolio styles
+   Mobile-first: the basic rules are for phones.
+   The @media rule at the bottom adjusts the layout for
+   bigger screens (tablets and laptops).
+   ========================================================= */
+
+/* 1. Colours stored in variables so you can change them in one place */
+:root {
+  --navy: #0B2E59;
+  --blue: #0B5FBF;
+  --cyan: #00B4D8;
+  --grey: #5B6B7C;
+  --light: #F5F9FD;
+  --border: #D7E4F0;
+}
+
+/* 2. Reset: remove default browser spacing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--navy);
+  line-height: 1.6;
+  background: #FFFFFF;
+}
+
+img { max-width: 100%; display: block; }
+
+/* 3. Header and navigation */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  background: var(--navy);
+  position: sticky;   /* header stays on top while scrolling */
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+.logo span { color: var(--cyan); }
+
+nav a {
+  color: #CFE6F5;
+  text-decoration: none;
+  margin-left: 16px;
+  font-size: 0.95rem;
+}
+nav a:hover { color: #FFFFFF; }
+
+/* 4. Hero section */
+.hero {
+  padding: 60px 20px;
+  background: var(--light);
+  text-align: center;
+}
+.kicker { color: var(--cyan); font-weight: bold; letter-spacing: 2px; text-transform: uppercase; }
+.hero h1 { font-size: 2.4rem; margin: 6px 0 12px; }
+.tagline { color: var(--grey); max-width: 560px; margin: 0 auto 24px; }
+
+/* 5. Buttons */
+.btn {
+  display: inline-block;
+  background: var(--blue);
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn:hover { background: var(--navy); }
+
+/* 6. General section spacing */
+.section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.section h2 { font-size: 1.8rem; margin-bottom: 12px; }
+.section > p { color: var(--grey); margin-bottom: 20px; }
+
+/* 7. Skills as small pills */
+.skills {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skills li {
+  background: #E8F7FB;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 0.9rem;
+}
+
+/* 8. Project cards: one column on phones */
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.card {
+  background: var(--light);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.card h3, .card p, .card .link { margin: 0 16px; }
+.card h3 { margin-top: 14px; }
+.card p { color: var(--grey); font-size: 0.95rem; }
+.card .link {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: var(--blue);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* 9. Contact form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 520px;
+}
+.contact-form label { font-weight: bold; font-size: 0.95rem; }
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+.contact-form button { margin-top: 10px; align-self: flex-start; }
+
+/* 10. Footer */
+.site-footer {
+  text-align: center;
+  padding: 24px;
+  background: var(--navy);
+  color: #CFE6F5;
+  font-size: 0.9rem;
+}
+.workshop-note { margin-top: 6px; font-size: 0.8rem; opacity: 0.8; }
+.workshop-note a { color: var(--cyan); text-decoration: none; }
+.workshop-note a:hover { text-decoration: underline; }
+
+/* 12. Visible focus ring for keyboard users */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
+
+/* 11. Bigger screens (768px wide and above): 3 project cards side by side */
+@media (min-width: 768px) {
+  .hero { padding: 90px 20px; }
+  .hero h1 { font-size: 3.2rem; }
+  .projects { grid-template-columns: repeat(3, 1fr); }
+}
