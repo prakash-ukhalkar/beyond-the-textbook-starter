@@ -25,19 +25,21 @@ Workshop led by **[Prakash Ukhalkar](https://github.com/prakash-ukhalkar)** — 
 beyond-the-textbook-starter/
 ├── index.html                      Home page that links to all examples
 ├── presentation/
-│   └── Beyond-the-Textbook.pptx    Workshop slides
+│   └── Beyond the Textbook          Workshop slides
 ├── examples/
 │   ├── 01-portfolio/               Personal portfolio (HTML + CSS)
 │   ├── 02-formspree-contact/       Contact form that emails you (Formspree)
 │   └── 03-supabase-guestbook/      Guestbook that saves messages (Supabase)
 │       └── admin.html              Admin panel to review/delete messages (Supabase Auth)
 └── guides/
-    ├── 01-Portfolio-Page-Guide.docx
-    ├── 02-Formspree-Contact-Form-Guide.docx
-    ├── 03-Supabase-Guestbook-Guide.docx
-    ├── 04-GitHub-Pages-Publishing-Guide.docx
-    └── 05-Google-Sites-and-Wix-Guide.docx
+    ├── 01 Portfolio Page Guide
+    ├── 02 Formspree Contact Form Guide
+    ├── 03 Supabase Guestbook Guide
+    ├── 04 GitHub Pages Publishing Guide
+    └── 05 Google Sites and Wix Guide
 ```
+
+*Guides are Word documents; the presentation is a PowerPoint slide deck.*
 
 ## Quick start
 
