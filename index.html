@@ -21,7 +21,20 @@
     .card h2 { font-size: 1.2rem; margin: 4px 0; }
     .card p { color: var(--grey); font-size: .95rem; }
     footer { text-align: center; color: var(--grey); font-size: .85rem; padding: 24px; }
-    @media (min-width: 768px) { main { grid-template-columns: repeat(3, 1fr); } }
+    @media (min-width: 640px) { main { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1000px) { main { grid-template-columns: repeat(4, 1fr); } }
+
+    .resources { max-width: 960px; margin: 0 auto; padding: 8px 20px 40px; }
+    .resources h2 { font-size: 1.4rem; margin-bottom: 4px; }
+    .resources > p { color: var(--grey); margin-bottom: 20px; font-size: .95rem; }
+    .res-grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
+    @media (min-width: 640px) { .res-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1000px) { .res-grid { grid-template-columns: repeat(3, 1fr); } }
+    .res-group { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 18px 20px; }
+    .res-group h3 { font-size: .95rem; color: var(--blue); margin-bottom: 10px; }
+    .res-group ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+    .res-group a { color: var(--navy); text-decoration: none; font-size: .92rem; }
+    .res-group a:hover { color: var(--cyan); text-decoration: underline; }
 
     .instructor-bar { background: #071F3D; color: #CFE6F5; font-size: .82rem; padding: 8px 20px; text-align: center; }
     .instructor-bar a { color: #fff; text-decoration: none; font-weight: bold; }
@@ -61,7 +74,74 @@
       <h2>Class Guestbook</h2>
       <p>Save and show messages with a Supabase database.</p>
     </a>
+    <a class="card" href="#resources">
+      <span class="num">04</span>
+      <h2>Resources</h2>
+      <p>Every tool, service and doc link used in this workshop.</p>
+    </a>
   </main>
+
+  <section class="resources" id="resources">
+    <h2>Resources</h2>
+    <p>All the services, docs and learning links used across the guides and examples in this project.</p>
+    <div class="res-grid">
+
+      <div class="res-group">
+        <h3>Services used in the examples</h3>
+        <ul>
+          <li><a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a> &mdash; contact form (Example 02)</li>
+          <li><a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a> &mdash; database &amp; auth (Example 03)</li>
+          <li><a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a> &mdash; free hosting</li>
+        </ul>
+      </div>
+
+      <div class="res-group">
+        <h3>Official documentation</h3>
+        <ul>
+          <li><a href="https://help.formspree.io" target="_blank" rel="noopener">Formspree Help</a></li>
+          <li><a href="https://supabase.com/docs" target="_blank" rel="noopener">Supabase Docs</a></li>
+          <li><a href="https://docs.github.com/pages" target="_blank" rel="noopener">GitHub Pages Docs</a></li>
+        </ul>
+      </div>
+
+      <div class="res-group">
+        <h3>Learn web development</h3>
+        <ul>
+          <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Web Docs</a></li>
+          <li><a href="https://www.freecodecamp.org" target="_blank" rel="noopener">freeCodeCamp</a></li>
+          <li><a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools</a></li>
+        </ul>
+      </div>
+
+      <div class="res-group">
+        <h3>Practise &amp; test your site</h3>
+        <ul>
+          <li><a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a> &mdash; try out code snippets</li>
+          <li><a href="https://pagespeed.web.dev" target="_blank" rel="noopener">PageSpeed Insights</a> &mdash; check site performance</li>
+        </ul>
+      </div>
+
+      <div class="res-group">
+        <h3>No-code alternative (Guide 05)</h3>
+        <ul>
+          <li><a href="https://sites.google.com" target="_blank" rel="noopener">Google Sites</a></li>
+          <li><a href="https://www.wix.com" target="_blank" rel="noopener">Wix</a></li>
+        </ul>
+      </div>
+
+      <div class="res-group">
+        <h3>Instructor</h3>
+        <ul>
+          <li><a href="https://github.com/prakash-ukhalkar" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://prakash-ukhalkar.github.io" target="_blank" rel="noopener">Website</a></li>
+          <li><a href="https://www.linkedin.com/in/prakash-ukhalkar" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://sites.google.com/view/prakashu" target="_blank" rel="noopener">Google Site</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
   <footer class="site-footer">
     <p class="credit">Prakash Ukhalkar</p>
     <p class="role">Educator &middot; Mentor &middot; Machine Learning, AI &amp; Innovation &middot; Pimpri Chinchwad College of Engineering, Pune</p>
